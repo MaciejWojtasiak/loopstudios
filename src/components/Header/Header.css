@@ -1,0 +1,30 @@
+.header {
+    background-image: url('../../images/mobile/image-hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-top: 1rem;
+}
+.logo{
+    width: 10rem;
+    object-fit: contain;
+}
+.hamburger {
+    cursor: pointer;
+    height: 1rem;
+}
+.header__text {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 3rem;
+    margin: 0;
+}
