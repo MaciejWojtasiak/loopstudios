@@ -1,0 +1,27 @@
+.footer{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+}
+.footer__logo{
+    margin: 2rem 0;
+}
+
+.footer__nav, .footer__socials{
+    list-style: none;
+}
+.footer__nav  {
+    margin-bottom: 2rem;
+}
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+   
+}
+.footer .nav__item {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}

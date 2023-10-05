@@ -1,0 +1,25 @@
+.creations {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+}
+.creation {
+    min-height: 15vh;
+    margin-bottom: 1rem;
+}
+.creations__btn {
+    justify-self: center;
+    margin-top: 1rem;
+}
+.creation__title{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+}
+#creation-earth{
+    background-image: url('../../images/mobile/image-deep-earth.jpg');
+    background-size: cover;
+}

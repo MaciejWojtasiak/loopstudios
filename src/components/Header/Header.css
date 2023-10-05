@@ -14,17 +14,44 @@
 .logo{
     width: 10rem;
     object-fit: contain;
+    z-index: 1;
 }
 .hamburger {
     cursor: pointer;
     height: 1rem;
+    z-index: 1;
 }
 .header__text {
     border: 1px solid var(--color-white);
     color: var(--color-white);
-    font-family: var(--font-secondary);
     text-transform: uppercase;
     padding: 1rem;
     font-size: 3rem;
     margin: 0;
+}
+
+.header__nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: right .2s;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(5,5rem);
+    align-items: center;
+    padding-top: 6rem;
+}
+.header__nav.active{
+    right: 0;
+}
+
+.header__nav .nav__item{
+    color: var(--color-white);
+    font-size: 2rem;
 }

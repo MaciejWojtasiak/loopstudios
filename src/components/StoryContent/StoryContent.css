@@ -1,6 +1,5 @@
-.storyContent{
-    font-family: var(--font-secondary);
-    padding: 0 4rem;
+.storyContent{    
+    padding: 0 2rem;
     text-align: center;
 }
 
