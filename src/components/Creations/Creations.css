@@ -3,23 +3,46 @@
     margin-bottom: 2rem;
     display: grid;
 }
-.creation {
-    min-height: 15vh;
-    margin-bottom: 1rem;
-}
 .creations__btn {
     justify-self: center;
     margin-top: 1rem;
 }
-.creation__title{
-    color: var(--color-white);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    width: 8rem;
-    margin-left: 1rem;
-    margin-top: 4rem;
+.creations-grid{
+    display: grid;
 }
-#creation-earth{
-    background-image: url('../../images/mobile/image-deep-earth.jpg');
-    background-size: cover;
+
+@media (min-width:1000px) {
+    .creations{
+        grid-row:  4 / 5;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 2rem;
+    }
+    .creations__heading {
+        text-align: left!important;
+    }
+    .creations__btn {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        align-self: center;
+    }
+    .creations-grid{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-template-rows: min-content;
+        grid-gap: 2rem;
+    }
+    .creation{
+        min-height: 30rem;
+    }
+}
+
+
+@media (min-width:1250px) {
+    .creations{
+        grid-row:  3/ 4;
+    }
 }

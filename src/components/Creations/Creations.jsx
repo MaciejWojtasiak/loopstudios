@@ -1,26 +1,28 @@
+import { useEffect, useState } from 'react';
 import './Creations.css';
-import earthImg from '../../images/mobile/image-deep-earth.jpg';
+import Creation from '../Creation/Creation';
+import { data } from '../../data';
 
 function Creations() {
+  const [creations, setCreations] = useState([]);
+  useEffect(()=>{
+    const items = data.slice(0, 4);
+    setCreations(items)
+  },[])
+
+  const expandItems = () => {
+    setCreations(data);
+  }
+ 
   return (
     <section className="creations">
-      <h2 className="creations__heading heading-2">Our creations</h2>
-      <div className="creation" id="creation-earth">        
-        <p className='creation__title'>Deep earth</p>
+      <h2 className="creations__heading heading-2">Our creations</h2>      
+      <div className="creations-grid">
+        {creations.map((creation)=>{
+          return <Creation key={creation.id} image={creation.imgSm} title={creation.title}/>
+        })}     
       </div>
-      <div className="creation" id="creation-earth">        
-        <p className='creation__title'>Deep earth</p>
-      </div>
-      <div className="creation" id="creation-earth">        
-        <p className='creation__title'>Deep earth</p>
-      </div>
-      <div className="creation" id="creation-earth">        
-        <p className='creation__title'>Deep earth</p>
-      </div>
-      <div className="creation" id="creation-earth">        
-        <p className='creation__title'>Deep earth</p>
-      </div>
-      <button className="btn creations__btn">See all</button>
+      <button className="btn creations__btn" onClick={expandItems}>See all</button>
     </section>
   )
 }

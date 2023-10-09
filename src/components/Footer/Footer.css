@@ -25,3 +25,40 @@
     font-size: 1.2rem;
     margin: 1rem 0;
 }
+
+.copy{
+    color: var(--color-gray);
+}
+
+@media (min-width:1000px) {
+    .footer{
+        grid-row: 5/6;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        align-items: center;
+    }
+    .footer__logo{
+        margin: 0;
+    }
+    .footer__nav{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0;
+    }
+    .footer__nav .nav__item {
+        font-size: 1rem;
+    }
+
+    .footer__socials{
+        justify-content: flex-end;
+    }
+    .copy {
+        text-align: right;
+    }    
+}

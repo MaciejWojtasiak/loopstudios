@@ -30,6 +30,7 @@ function Footer() {
           <img src={twitter} alt="twitter" className='socials__icon'/>
         </li>   
       </div>
+      <p className='copy'>&copy; 2023 Copyright Maciej Wojtasiak</p>
     </footer>
   )
 }

@@ -16,15 +16,23 @@ function Header() {
       <nav className='nav'>       
         <img src={logoSVG} alt="Logo" className='logo'/>
         <img src={!navOpen ? hamburger : close} alt='menu-hamburger' className='hamburger' onClick={handleClick}/>  
-        <ul className={`header__nav ${!navOpen ? '': 'active'}`} >
+        <ul className={`header__nav header__nav--mobile ${!navOpen ? '': 'active'}`} >
           <li className="nav__item">About</li>
           <li className="nav__item">Careers</li>
           <li className="nav__item">Events</li>
           <li className="nav__item">Products</li>
           <li className="nav__item">Support</li>
-        </ul>    
+        </ul>   
+
+         <ul className={`header__nav header__nav--desktop`} >
+          <li className="nav__item">About</li>
+          <li className="nav__item">Careers</li>
+          <li className="nav__item">Events</li>
+          <li className="nav__item">Products</li>
+          <li className="nav__item">Support</li>
+        </ul>  
       </nav>
-      <p className='header__text'>immersive experience that deliver</p>
+      <p className='header__text'>immersive experiences that deliver</p>
     </header>
   )
 }

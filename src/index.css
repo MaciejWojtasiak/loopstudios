@@ -44,3 +44,18 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
 }
+
+
+@media (min-width:1250px) {
+  .app{
+    grid-template-rows: 80vh 40vw repeat(2, min-content);
+    grid-template-columns: repeat(10,1fr) ;
+  }
+}
+
+/* @media (min-width:400px) {
+  .app{
+    grid-template-rows: 80vh 40vw repeat(2, min-content);
+    grid-template-columns: repeat(10,1fr) ;
+  }
+} */
