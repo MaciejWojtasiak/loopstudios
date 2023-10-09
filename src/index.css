@@ -46,11 +46,19 @@ body {
 }
 li a {
   color: currentColor;
-  text-decoration: none;
-  transition: all .2s;
+  text-decoration: none; 
 }
-li a:hover {
-  color: var(--color-gray);
+
+li a::after {
+  content: '';
+  display: block;
+  padding-bottom: .5rem;
+  border-bottom: solid 1px currentColor;
+  transform: scaleX(0);
+  transition: transform 150ms ease-in;
+}
+li a:hover::after{
+  transform: scaleX(1);
 }
 
 @media (min-width:1250px) {
