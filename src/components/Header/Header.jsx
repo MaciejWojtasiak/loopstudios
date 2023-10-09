@@ -17,19 +17,19 @@ function Header() {
         <img src={logoSVG} alt="Logo" className='logo'/>
         <img src={!navOpen ? hamburger : close} alt='menu-hamburger' className='hamburger' onClick={handleClick}/>  
         <ul className={`header__nav header__nav--mobile ${!navOpen ? '': 'active'}`} >
-          <li className="nav__item">About</li>
-          <li className="nav__item">Careers</li>
-          <li className="nav__item">Events</li>
-          <li className="nav__item">Products</li>
-          <li className="nav__item">Support</li>
+        <li className="nav__item"><a href='#'>About</a></li>
+        <li className="nav__item"><a href="#">Careers</a></li>
+        <li className="nav__item"><a href="#">Events</a></li>
+        <li className="nav__item"><a href="#">Products</a></li>
+        <li className="nav__item"><a href="#">Support</a></li>
         </ul>   
 
          <ul className={`header__nav header__nav--desktop`} >
-          <li className="nav__item">About</li>
-          <li className="nav__item">Careers</li>
-          <li className="nav__item">Events</li>
-          <li className="nav__item">Products</li>
-          <li className="nav__item">Support</li>
+         <li className="nav__item"><a href='#'>About</a></li>
+        <li className="nav__item"><a href="#">Careers</a></li>
+        <li className="nav__item"><a href="#">Events</a></li>
+        <li className="nav__item"><a href="#">Products</a></li>
+        <li className="nav__item"><a href="#">Support</a></li>
         </ul>  
       </nav>
       <p className='header__text'>immersive experiences that deliver</p>

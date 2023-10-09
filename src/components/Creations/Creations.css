@@ -14,10 +14,12 @@
 @media (min-width:1000px) {
     .creations{
         grid-row:  4 / 5;
-        grid-column: 1 / -1;
+        
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 2rem;
+        margin-bottom: 10rem;
+        /* justify-content: center; */
     }
     .creations__heading {
         text-align: left!important;
@@ -44,5 +46,6 @@
 @media (min-width:1250px) {
     .creations{
         grid-row:  3/ 4;
+        grid-column: 2 / 10;
     }
 }

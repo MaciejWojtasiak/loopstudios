@@ -44,7 +44,14 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
 }
-
+li a {
+  color: currentColor;
+  text-decoration: none;
+  transition: all .2s;
+}
+li a:hover {
+  color: var(--color-gray);
+}
 
 @media (min-width:1250px) {
   .app{
@@ -53,9 +60,3 @@ body {
   }
 }
 
-/* @media (min-width:400px) {
-  .app{
-    grid-template-rows: 80vh 40vw repeat(2, min-content);
-    grid-template-columns: repeat(10,1fr) ;
-  }
-} */

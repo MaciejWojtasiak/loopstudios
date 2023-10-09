@@ -10,24 +10,24 @@ function Footer() {
     <footer className="footer">
       <img src={logo} alt="Logo" className='footer__logo'/>
       <nav className='footer__nav'>
-        <li className="nav__item">About</li>
-        <li className="nav__item">Careers</li>
-        <li className="nav__item">Events</li>
-        <li className="nav__item">Products</li>
-        <li className="nav__item">Support</li>
+        <li className="nav__item"><a href='#'>About</a></li>
+        <li className="nav__item"><a href="#">Careers</a></li>
+        <li className="nav__item"><a href="#">Events</a></li>
+        <li className="nav__item"><a href="#">Products</a></li>
+        <li className="nav__item"><a href="#">Support</a></li>
       </nav>
       <div className="footer__socials">
-        <li className="socials__item">
-          <img src={facebook} alt="facebook" className='socials__icon'/>
+        <li className="socials__item">          
+          <a href="#"><img src={facebook} alt="facebook" className='socials__icon'/></a>
         </li>    
         <li className="socials__item">
-          <img src={instagram} alt="instagram" className='socials__icon'/>
+        <a href="#"><img src={instagram} alt="instagram" className='socials__icon'/></a>
         </li> 
         <li className="socials__item">
-          <img src={pinterest} alt="pinterest" className='socials__icon'/>
+        <a href="#"><img src={pinterest} alt="pinterest" className='socials__icon'/></a>
         </li> 
         <li className="socials__item">
-          <img src={twitter} alt="twitter" className='socials__icon'/>
+        <a href="#"><img src={twitter} alt="twitter" className='socials__icon'/></a>
         </li>   
       </div>
       <p className='copy'>&copy; 2023 Copyright Maciej Wojtasiak</p>

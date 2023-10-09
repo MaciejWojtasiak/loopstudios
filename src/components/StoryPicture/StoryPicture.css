@@ -1,6 +1,7 @@
 .storyPicture{    
     margin-top: 4rem;
     padding: 2rem;
+    grid-row: 2 / 3;
 }
 .story__image {
     width: 100%;
