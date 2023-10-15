@@ -1,16 +1,12 @@
 .creation {
-    min-height: 15vh;
+
     margin-bottom: 1rem;    
     cursor: pointer;
     position: relative;
 }
-
 .creation__img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
     transition: all .2s;
+    width: 100%;
 }
 
 .creation__title{
@@ -32,21 +28,11 @@
     filter: opacity(.7);
 }
 
-@media (min-width:400px) {
-    
+@media (min-width:400px) {    
     .creation__title{ 
         bottom: unset;
         top: 1rem;
         left: 1rem;
-    }
-}
-
-
-
-@media (min-width:1250px) {
-    .creation{
-        width: 100%;
-        height: 35rem;
     }
 }
 

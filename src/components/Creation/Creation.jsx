@@ -1,18 +1,38 @@
 import PropTypes from "prop-types";
 import './Creation.css';
+import {motion} from 'framer-motion';
 
-function Creation({title, image}) {
+
+const fadeInAnimationVariants = {
+  initial:{
+    opacity:0,
+    y:100,
+  },
+  animate:(index)=>({
+    opacity:1,
+    y:0,
+    transition: {
+      delay:index * 0.05,
+    }
+  })
+}
+
+function Creation({title, imageSm, imageBg , index}) {
   return (
-    <div className="creation" id="creation-earth" >        
-        <div className="creation__img" style={{backgroundImage:`linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image})`}}></div>
+    <motion.div className="creation" variants={fadeInAnimationVariants} initial={"initial"} whileInView={"animate"} custom={index} viewport={{ once: true }} >     
+        <picture>
+          <source media="(min-width:600px)" srcSet={imageBg} />       
+          <img src={imageSm} alt={`${title}-img`}  className="creation__img"/>          
+        </picture>    
         <p className='creation__title'>{title}</p>
-      </div>
+      </motion.div>
   )
 }
 
 Creation.propTypes = {
     title: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    imageSm: PropTypes.string.isRequired,
+    imageBg: PropTypes.string.isRequired
 }
 
 export default Creation

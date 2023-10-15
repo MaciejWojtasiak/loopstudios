@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   font-family: var(--font-primary);
   font-size: 62.5%;
+  /* overflow-x: hidden; */
 }
 
 .app {
@@ -68,3 +69,6 @@ li a:hover::after{
   }
 }
 
+picture{
+  display: block;
+}
