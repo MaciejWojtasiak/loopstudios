@@ -2,7 +2,7 @@ import './Header.css';
 import logoSVG from '../../images/logo.svg';
 import hamburger from '../../images/icon-hamburger.svg';
 import close from '../../images/icon-close.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {motion} from 'framer-motion';
 
 const variants = {
@@ -36,6 +36,10 @@ function Header() {
   const handleClick = () => {
     setNavOpen(prevState => !prevState);
   }
+
+  useEffect(()=>{
+    navOpen ? document.body.style.overflow = 'hidden' :document.body.style.overflow = 'unset';
+  },[navOpen])
 
   const linkItems = ["About", "Careers", "Events", "Products", "Support"]
 
