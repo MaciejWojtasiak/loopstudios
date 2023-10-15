@@ -103,3 +103,9 @@
         display: grid;
        }
 }
+
+@media (min-width:1500px) {
+        .header__text{
+            font-size: 5rem;
+        }
+}
