@@ -1,8 +1,14 @@
-# React + Vite
+# Loopstudios page
+This is a Loopstudios website page created based on <https://www.frontendmentor.io/)> design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+ - React
+ - CSS Grid
+ - Framer-motion
 
-Currently, two official plugins are available:
+## Deployment 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Both Frontend and Backend are hosted on Render.com for simplicity. Please be patient when you open the app for the first time because the server needs to restart after it shuts down due to inactivity.
+
+- Frontend: <https://maciejwojtasiak.github.io/loopstudios/>
+
